@@ -24,6 +24,17 @@ body {
     margin: 0 auto;
 }
 
+.common-title {
+    font-family: 'Merriweather', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
 .btn {
     background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
     border-radius: 8px;
@@ -58,7 +69,7 @@ body {
     align-items: center;
 }
 
-.header__logo img {
+.header-footer__logo img {
     vertical-align: bottom;
 }
 
@@ -90,6 +101,7 @@ body {
     overflow: hidden;
     background-image: url("../images/main_bg.png");
     background-position: top center;
+    background-repeat: no-repeat;
 }
 
 .menu__currency {
@@ -155,4 +167,197 @@ body {
     position: absolute;
     top: -123px;
     left: calc(100% - 991px)    ;
+}
+
+.why {
+    background-image: url("../images/whyImages/whybg.png");
+    background-position: top center;
+    background-size: initial;
+    padding-bottom: 180px;
+}
+
+.why__items {
+    margin-top: 60px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(3, 312px);
+    justify-content: center;
+}
+.why__item {
+    text-align: center;
+}
+
+.why__item-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 24px 0;
+}
+
+.why__item-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.products {
+    background-image: url("../images/productsImages/burgers_bg.png");
+    background-position: top center;
+    background-size: 1400px;
+    padding-bottom: 180px;
+}
+
+.products__items {
+    display: grid;
+    grid-template-columns: repeat(3, 384px);
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.products__item {
+    padding: 30px;
+    background: #211A16;
+    border: 1px solid #353535;
+    border-radius: 16px;
+}
+
+.products__item-image {
+    min-height: 250px;
+}
+
+.products__item-image img {
+    max-width: 100%;
+}
+
+.products__item-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 24px 0;
+}
+
+.products__item-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 24px;
+}
+
+.products__item-extra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__item-price {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 8px;
+}
+
+.products__item-weight {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #757575;
+}
+
+.products__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 182px;
+    height: 62px;
+}
+
+.products__button span:first-child {
+    margin-right: 10px;
+}
+
+.order {
+    background-image: url("images/orderImages/order_bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    overflow: hidden;
+}
+
+.order__container {
+    position: relative;
+}
+
+.order__image {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 764px);
+    z-index: -1;
+}
+
+.order__form {
+    background: #211A16;
+    border: 1px solid #353535;
+    border-radius: 16px;
+    margin-top: 60px;
+    max-width: 426px;
+    box-sizing: border-box;
+    padding: 60px 40px;
+    margin-left: 1085px;
+}
+
+.order__form-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.order__form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.order__form-input {
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    width: 344px;
+    height: 62px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.order__form-input input {
+    padding: 20px 10px;
+    background-color: #211A16;
+    border-radius: 8px;
+    width: 342px;
+    height: 60px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid transparent;
+    color: white;
+}
+
+.order__form-inputs button {
+    min-width: 344px;
+    min-height: 62px;
+
+}
+
+.footer {
+    padding: 60px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__rights {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
 }
